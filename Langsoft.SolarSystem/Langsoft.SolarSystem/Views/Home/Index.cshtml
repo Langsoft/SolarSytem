@@ -1,0 +1,84 @@
+﻿@model Langsoft.SolarSystem.Models.ssPlanetVM
+@{
+    ViewBag.Title = "Home Page";
+}
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml"; ;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <style>
+        .Grid-table {
+            background-color: white;
+            display: table;
+            border: solid 1px #98BF21;
+        }
+
+        .Grid-table-table td, th {
+            border: 1px solid #98BF21;
+            padding: 3px 7px 2px;
+        }
+
+        .Grid-Header td th {
+            background-color: #A7C942;
+            color: #FFFFFF;
+            text-align: left;
+        }
+
+        .Grid-alt {
+            background-color: #EAF2D3;
+            padding: 3px 7px 2px;
+        }
+
+        .Grid-selected {
+            background-color: blue;
+        }
+
+        .Grid-rowstyle {
+            padding: 3px 7px 2px;
+        }
+
+        .Grid-Footer {
+            background-color: aqua;
+        }
+    </style>
+
+    <script src="~/Scripts/jquery-2.1.4 (1).js"></script>
+
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <h2>List of Planets (without Pluto, sorry it's no longer a planet!)</h2>
+    <form id="exportWebGrid" action="Meeting/ExportHeade" method="post">
+        <div name="webView" style="display:@Model.Status">
+
+            @{
+                WebGrid objWebGrid = new WebGrid(Model.ssPlanetsObj, rowsPerPage: 15, canPage: true);
+            }
+            @objWebGrid.GetHtml(
+
+       tableStyle: "Grid-table",
+       headerStyle: "Grid-Header",
+       alternatingRowStyle: "Grid-alt",
+       selectedRowStyle: "Grid-selected",
+       rowStyle: "Grid-rowstyle",
+       footerStyle: "Grid-Footer",
+       mode: WebGridPagerModes.All, //Specifies flags that describe the methods that are provided for moving between the pages of a WebGrid instance. source msdn.microsoft.com
+    columns:
+       objWebGrid.Columns
+       (
+           @*objWebGrid.Column(columnName: "PlanetID", header: "Planet ID"),*@
+           objWebGrid.Column(columnName: "PlanetName", header: "Name"),
+           objWebGrid.Column(format: @<text>@Html.ActionLink("Details", "PlanetDetail", "PlanetDetail", new { planetName = item.PlanetName }, null)</text>)
+        )
+
+       )
+        </div>
+    </form>
+</body>
+</html>

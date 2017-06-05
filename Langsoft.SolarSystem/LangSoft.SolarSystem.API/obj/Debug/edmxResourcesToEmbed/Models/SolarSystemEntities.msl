@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SolarModelStoreContainer" CdmEntityContainer="SolarSystemEntities">
+    <EntitySetMapping Name="Planets">
+      <EntityTypeMapping TypeName="SolarModel.Planet">
+        <MappingFragment StoreEntitySet="Planet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Mass" ColumnName="Mass" />
+          <ScalarProperty Name="MassUnit" ColumnName="MassUnit" />
+          <ScalarProperty Name="SolarDistance" ColumnName="SolarDistance" />
+          <ScalarProperty Name="SolarDistanceUnit" ColumnName="SolarDistanceUnit" />
+          <ScalarProperty Name="Diameter" ColumnName="Diameter" />
+          <ScalarProperty Name="DiameterUnit" ColumnName="DiameterUnit" />
+          <ScalarProperty Name="NoOf_Moons" ColumnName="NoOf Moons" />
+          <ScalarProperty Name="ImageUrl" ColumnName="ImageUrl" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

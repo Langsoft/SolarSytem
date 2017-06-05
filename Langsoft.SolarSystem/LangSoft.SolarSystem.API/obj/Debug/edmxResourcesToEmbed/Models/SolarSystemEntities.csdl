@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SolarModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Planet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Mass" Type="Double" />
+    <Property Name="MassUnit" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SolarDistance" Type="Double" />
+    <Property Name="SolarDistanceUnit" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Diameter" Type="Double" />
+    <Property Name="DiameterUnit" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="NoOf_Moons" Type="Int32" />
+    <Property Name="ImageUrl" Type="String" MaxLength="1024" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="SolarSystemEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Planets" EntityType="Self.Planet" />
+  </EntityContainer>
+</Schema>

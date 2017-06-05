@@ -1,0 +1,98 @@
+[
+    {
+        "Id": 1,
+        "Name": "Mercury",
+        "Mass": 3.3011,
+        "MassUnit": "x 10^23 kg",
+        "SolarDistance": 57910000,
+        "SolarDistanceUnit": "km",
+        "Diameter": 4800,
+        "DiameterUnit": "km",
+        "NoOf_Moons": 0,
+        "ImageUrl": "https://tse3.mm.bing.net/th?id=OIP.3g4L5SnuUUqHW9lrtVFr_wEsEs&pid=15.1&P=0&w=300&h=300"
+    },
+    {
+        "Id": 2,
+        "Name": "Venus",
+        "Mass": 4.8675,
+        "MassUnit": "x 10^24 kg",
+        "SolarDistance": 108939000,
+        "SolarDistanceUnit": "km",
+        "Diameter": 12100,
+        "DiameterUnit": "km",
+        "NoOf_Moons": 0,
+        "ImageUrl": "https://sp.yimg.com/ib/th?id=OIP.DcLn9ex94CAq5UcB5UfFwQEsEs&pid=15.1&rs=1&c=1&qlt=95&w=300&h=300"
+    },
+    {
+        "Id": 3,
+        "Name": "Earth",
+        "Mass": 5.9736,
+        "MassUnit": "x 10^24 kg",
+        "SolarDistance": 150000000,
+        "SolarDistanceUnit": "km",
+        "Diameter": 12756,
+        "DiameterUnit": "km",
+        "NoOf_Moons": 1,
+        "ImageUrl": "https://tse3.mm.bing.net/th?id=OIP.ZB-A_MLjR0mF590zquFezAEsEs&pid=15.1&P=0&w=300&h=300"
+    },
+    {
+        "Id": 4,
+        "Name": "Mars",
+        "Mass": 6.4169,
+        "MassUnit": "x 10^23 kg",
+        "SolarDistance": 228000000,
+        "SolarDistanceUnit": "km",
+        "Diameter": 6792,
+        "DiameterUnit": "km",
+        "NoOf_Moons": 2,
+        "ImageUrl": "https://tse3.mm.bing.net/th?id=OIP.RoiV5xdoglFhuH1gqMoBEQEsEp&pid=15.1&P=0&w=300&h=300"
+    },
+    {
+        "Id": 5,
+        "Name": "Jupiter",
+        "Mass": 1.9,
+        "MassUnit": "x 10^27 kg",
+        "SolarDistance": 778547200,
+        "SolarDistanceUnit": "km",
+        "Diameter": 142984,
+        "DiameterUnit": "km",
+        "NoOf_Moons": 68,
+        "ImageUrl": "https://tse4.mm.bing.net/th?id=OIP.3POXj9kBSXGxvUn96uI8gQENEs&pid=15.1&P=0&w=300&h=300"
+    },
+    {
+        "Id": 6,
+        "Name": "Saturn",
+        "Mass": 5.6,
+        "MassUnit": "x 10^26 kg",
+        "SolarDistance": 1433449370,
+        "SolarDistanceUnit": "km",
+        "Diameter": 120536,
+        "DiameterUnit": "km",
+        "NoOf_Moons": 150,
+        "ImageUrl": "https://tse2.mm.bing.net/th?id=OIP.r-7nbqKRZ7wuDybxDfou6AEsDI&pid=15.1&P=0&w=300&h=300"
+    },
+    {
+        "Id": 7,
+        "Name": "Uranus",
+        "Mass": 8.68,
+        "MassUnit": "x 10^25 kg",
+        "SolarDistance": 2876679082,
+        "SolarDistanceUnit": "km",
+        "Diameter": 51118,
+        "DiameterUnit": "km",
+        "NoOf_Moons": 27,
+        "ImageUrl": "https://tse3.mm.bing.net/th?id=OIP.PKyvCfsJ5JyNoDFVk5fOPgEsDh&pid=15.1&P=0&w=300&h=300"
+    },
+    {
+        "Id": 8,
+        "Name": "Neptune",
+        "Mass": 1.02,
+        "MassUnit": "x 10^26 Kg",
+        "SolarDistance": 4503443661,
+        "SolarDistanceUnit": "km",
+        "Diameter": 49500,
+        "DiameterUnit": "km",
+        "NoOf_Moons": 14,
+        "ImageUrl": "https://tse4.mm.bing.net/th?id=OIP.WCJ8qtS2d3RYwafhLLpkaQEsEs&pid=15.1&P=0&w=300&h=300"
+    }
+]

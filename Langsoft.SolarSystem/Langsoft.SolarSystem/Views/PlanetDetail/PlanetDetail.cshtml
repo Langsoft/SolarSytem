@@ -1,0 +1,35 @@
+﻿@model Langsoft.SolarSystem.Models.SsPlanetDetails
+
+@{
+    ViewBag.Title = "Planet Detail Page";
+}
+
+@{
+    Layout = null;
+}
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Planet @Model.Name details</title>
+</head>
+<body>
+    <div>
+       <img src="@Url.Content(Model.ImageUrl)" alt="IMAGE" />
+        <h2>Planet @Model.Name Details</h2>
+        <fieldset>
+            <legend>Details</legend>
+            <div> @Html.LabelFor(m => m.Name) @Html.DisplayFor(m => m.Name)</div>
+            <div> @Html.LabelFor(m => m.Mass) @Html.DisplayFor(m => m.Mass)</div>
+            <div> @Html.LabelFor(m => m.SolarDistance) @Html.DisplayFor(m => m.SolarDistance)</div>
+            <div> @Html.LabelFor(m => m.Diameter) @Html.DisplayFor(m => m.Diameter)</div>
+            <div> @Html.LabelFor(m => m.NoOfMoons) @Html.DisplayFor(m => m.NoOfMoons)</div>
+            @*@Html.DisplayForModel()*@
+        </fieldset>
+    </div>
+    <input type="button" value="Back to list" onclick="location.href='@Url.Action("Index", "Home" )'" />
+</body>
+</html>
